@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borders and Background in CSS</title>
+
+    <style>
+        #firstPara {
+            background-color: red;
+            height: 100px;
+            width: 500px;
+
+            /* border-width: 4px;
+            border-style: solid;
+            border-color: green; */
+            /* OR */
+            border: 4px solid green; /* It will apply for all border */
+            border-radius: 10px; /* It will apply for all border radius */
+        }
+
+        #secondPara {
+            background-color: orange;
+            height: 100px;
+            width: 500px;
+
+            /* for border */
+            border-top: 4px solid black;
+            border-right: 4px solid rgb(74, 199, 16);
+            border-bottom: 4px solid rgb(167, 14, 206);
+            border-left: 4px solid rgb(171, 206, 14);
+            /* for border radius */
+            border-top-left-radius: 8px;
+            border-top-right-radius: 16px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 32px;
+        }
+
+        #thirdPara{
+            height: 500px;
+            width:455px; 
+            background-image: url('https://www.codewithharry.com/img/logo-blue.png');
+            border: 2px solid red;
+
+            /* background repeat or not */
+            background-repeat: no-repeat; /* no repeat */
+            /* background-repeat: repeat-x; It will make it repeat on x axis */
+            /* background-repeat: repeat-y; It will make it repeat on y axis */
+
+            /* background position */
+            background-position: 192px 34px; /* x y */
+            /* background-position: left top; */
+            /* background-position: left center; */
+            /* background-position: left bottom; */
+            /* background-position: right top; */
+            /* background-position: right center; */
+            /* background-position: right bottom; */
+            /* background-position: center top; */
+            /* background-position: center center; */
+            /* background-position: center bottom; */
+          }
+    </style>
+</head>
+
+<body>
+    <h3>This is first heading</h3>
+    <p id="firstPara">This is first paragraph</p>
+
+    <h3>This is second heading</h3>
+    <p id="secondPara">This is second paragraph</p>
+
+    <h3>This is third heading</h3>
+    <p id="thirdPara">This is third paragraph</p>
+
+</body>
+
+</html>

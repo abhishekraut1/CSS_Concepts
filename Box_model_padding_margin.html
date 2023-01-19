@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model, padding, margin</title>
+    <style>
+        /* This is universal selector : /* If it is not overrided then it becomes default for all elements */
+        *{
+            box-sizing: border-box; /* it will adjust width according to padding */
+            padding: 0;
+            margin: 0;
+        }
+
+        body{
+            background-color: #f5c3c3;
+        }
+        .container{
+            background-color: #c5c5e5;
+            border: 3px solid #4fbd7e;
+
+            /* we can set padding for: (top right bottom left) like this */
+            /*padding-top: 79px;
+            padding-right: 79px;
+            padding-bottom: 79px;
+            padding-left: 79px; */
+
+        /*    padding: 59px 76px 56px 36px; /* padding: top right bottom left; */
+            padding: 74px 89px; /* padding: y(top/bottom) x(right/left); */
+
+            /* we can set margin for top right bottom left like this */
+            /*margin-top: 79px;
+            margin-right: 79px;
+            margin-bottom: 79px;
+            margin-left: 79px; */
+
+        /*  margin: 79px 79px 79px 79px; /* margin: top right bottom left; */
+            margin: 74px 89px; /* margin: y(top/bottom) x(right/left); */
+
+        border-radius: 23px;
+        height: 113px;
+        /* width: 651px; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h4>This is first heading</h4>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ad architecto quia vitae facere. Cupiditate itaque neque culpa soluta saepe ea ad. Ab.</p>
+    </div>
+
+    <div class="container">
+        <h4>This is second heading</h4>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ad architecto quia vitae facere. Cupiditate itaque neque culpa soluta saepe ea ad. Ab.</p>
+    </div>
+
+    <div class="container">
+        <h4>This is third heading</h4>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ad architecto quia vitae facere. Cupiditate itaque neque culpa soluta saepe ea ad. Ab.</p>
+    </div>
+</body>
+</html>

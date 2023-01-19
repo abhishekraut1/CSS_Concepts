@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts In CSS</title>
+     <!-- web font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com"crossorigin><link href="https://fonts.googleapis.com/css2?family=Shizuru&display=swap"rel="stylesheet">
+
+    <style>
+        #para1 {
+            font-family: Arial, Helvetica, sans-serif; /* This is web safe font. */
+            font-size: 35px;
+            /* 1px = (1/96)th of inch */
+            line-height: 3.4em;
+            /* distance between upper and lower line */
+        }
+        
+        #para2 {
+            font-family: 'Shizuru', cursive; /* This is web font. */
+            font-size: 35px;
+            line-height: 3.4em;
+        }
+
+        span{
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Fonts In CSS</h4>
+    <p id="para1">This is web safe font.</p>
+    <p id="para2">This is <span>web font.</span></p>
+</body>
+
+</html>

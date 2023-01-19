@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline , Internal and External CSS</title>
+    <!-- Here if I write Internal CSS after External CSS then Internal CSS will execute. -->
+    <!-- if I write External CSS after Internal CSS then External CSS will execute. -->
+    <!-- jo badame use precedence jada -->
+    <style>
+        p{
+            color: yellow ; 
+            background-color: hotpink !important; /* '!important' will have the Greatest Precedence */
+        }
+    </style>
+    <link rel="stylesheet" href="tut14.css">
+</head>
+<body>
+    <h3>Inline , Internal and External CSS</h3>
+    <!-- Inline CSS : It has Higher precedence than Internal and External CSS but not higher than '!important' --> 
+    <!-- NOT RCEMMONDED -->
+    <p style="color: blue; background-color: black;">
+        This is a Inline CSS.
+    </p>
+    <p>
+        This is a CSS.
+    </p>
+</body>
+</html>
