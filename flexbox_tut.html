@@ -22,8 +22,8 @@
 
             /* default flex-wrap is nowrap */
             flex-wrap: nowrap;
-            /* flex-wrap: wrap; */
-            /* flex-wrap: wrap-reverse; */
+             flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse;  */
 
             /* flex-flow: flex-direction flex-wrap ;  (Short Hand)*/
             /* flex-flow: column-reverse wrap; */
@@ -37,7 +37,10 @@
             /* align-items:  will align the content in vertical direction */
             /* default align-items is flex-start */
             /* align-items: flex-start; */
-            /* align-items: center; ( flex-wrap: wrap is necessary ) */ 
+
+             /* ( flex-wrap: wrap is necessary for align-items: center;)   */
+             /* align-items: center; */
+
             /* align-content: center; */
             /* align-items: flex-end; */
 
@@ -60,8 +63,8 @@
             /* flex-grow: 1; */
             /* flex-shrink: 1; */
 
-            /* when flex-direction is set to row then flex-basis is controls width */
-            /* when flex-direction is set to column then flex-basis is controls height */
+            /* when flex-direction is set to row then flex-basis controls width */
+            /* when flex-direction is set to column then flex-basis controls height */
             /* flex-basis: 300px; */
 
             /* flex : flex-grow flex-shrink flex-basis; (short hand)*/
@@ -73,7 +76,7 @@
         }
 
         #item-2 {
-            /* order: 2; */
+            /* order: -1; */
             /* flex-grow: 2; */
             /* flex-shrink: 2; */
         }
@@ -85,6 +88,8 @@
         <div class="item" id="item-1">First Item</div>
         <div class="item" id="item-2">Second Item</div>
         <div class="item" id="item-3">Third Item</div>
+        <div class="item" id="item-3">Fourth Item</div>
+        <div class="item" id="item-3">Fifth Item</div>
     </div>
 </body>
 
